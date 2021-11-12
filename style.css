@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(151, 175, 196);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header{
+    margin-top: 5vh ;
+    font-size: xx-large;
+}
+
+header,form {
+    height : 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form input, form button{
+  font-size: 4vh;
+  border: none;
+  background: white;
+}
+
+form button{
+    padding-right: 1vh;
+    color: rgb(61, 101, 136);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+.listElements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background: white;
+    width: 48vw;
+    padding: 0.3vh;
+    margin: 1vh;
+}
+
+.taskElement{
+    flex: 1;
+}
+
+.crosstext{
+    text-decoration: line-through;
+    opacity: 60%;
+}
+
+.deleteTask{
+    display: none;
+    transition-property: ease 2s;
+}
+
+.check, .delete{
+    background: white;
+    color: rgb(61, 101, 136); 
+    border: none;
+}
